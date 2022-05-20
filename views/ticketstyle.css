@@ -1,0 +1,56 @@
+#nir-ticket-number {
+    font-size: 15px;
+}
+
+#nir-ticket-title {
+    font-size: 30px;
+}
+
+#nir-ticket-desc {
+    font-size: 18px;
+}
+
+.nir-card-title {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.ticketDetails-container {
+    border: 2px solid;
+    height: 500px;
+    width: 85%;
+    margin-left: 100px;
+    overflow-y: auto;
+}
+
+#nir-ticket-number {
+    color: #0d6efd;
+    border: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#nir-ticket-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#nir-ticket-desc {
+    margin-left: 100px;
+}
+
+#ticket-status {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 300px;
+    position: relative;
+}
+
+#ticket-assignedto {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative;
+}

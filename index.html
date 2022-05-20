@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MY TODO APP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/bootstrap-5.0.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/dragula//dragula.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="nir-branding-header">
+    <section class="nir-branding-image" onclick="gotoHomePage()">
+      <div style="font-size: 20px; font-family: 'Reggae One', cursive;">Nirvana</div>
+      <div style="font-size: 10px; color: #aeaeae; font-style: italic; margin-top: -5px;">Minimalist Project Management Tool</div>
+    </section>
+  </div>
+  <div class="liner-header"></div>
+  <div class="nir-container">
+    <div class="nir-quick-links">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addTodoModal"
+        id="addTodoBtn">Create</button>
+      <a href="#" id="toggleListView" onclick="toggleView(event, 'listView')">Listview</a>
+      <a href="#" id="toggleBoardView" onclick="toggleView(event, 'boardView')">Boardview</a>
+    </div>
+    <div id="todo-list-container"></div>
+    <div id="board-view" style="display: none;">
+      <div class="quick-filters nir-flex-container nir-row">
+        <span>Quick Filters:</span>
+        <a href="#" id="btnRajan" onclick="doFilter(event, 'Rajan')">Rajan</a>
+        <a href="#" id="btnMinesh" onclick="doFilter(event, 'Minesh')">Minesh</a>
+        <a href="#" id="btnShowAll" onclick="doFilter(event, 'showall')">Show All</a>
+      </div>
+      <div class="liner-header"></div>
+      <div class="status-view">
+        <div class="nir-flex-container nir-row">
+          <div class="width-100 padding-5px" id="boardViewTodoContainer">
+            <span>TODO</span>
+            <div class="todo-status-container card-container" id="todoItemMain">       
+            </div>
+          </div>
+          <div class="width-100 padding-5px" id="boardViewInProgressContainer">
+            <span>IN PROGRESS</span>
+            <div class="inprogress-status-container card-container" id="inProgressMain">             
+            </div>
+          </div>
+          <div class="width-100 padding-5px" id="boardViewDoneContainer">
+            <span>DONE</span>
+            <div class="done-status-container card-container" id="doneMain">            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="modal-popup">
+    <div class="modal-popup-content">
+    </div>
+  </div>
+  <div class="modal fade" id="addTodoModal" tabindex="-1" role="dialog" aria-labelledby="fadeModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <h4 class="modal-title" id="addTodoModalLabel">Add Todo</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="todoTitle" class="control-label">Title</label>
+              <input type="text" class="form-control" id="todoTitle">
+            </div>
+            <div class="form-group">
+              <label for="todoDescription" class="control-label">Description</label>
+              <textarea class="form-control" id="todoDescription"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="todoStatus" class="control-label">Status</label>
+              <select class="form-select" id="todoStatus">
+                <option value="not-started">Not Started</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Complete</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="todoAsignee" class="control-label">Assigned to:</label>
+              <select class="form-select" id="todoAsignee">
+                <option value="Rajan">Rajan</option>
+                <option value="Minesh">Minesh</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="todoDueDate" class="control-label">Due Date:</label>
+              <input type="text" class="form-control" id="todoDueDate">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="saveChangesModal()">Save
+            Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="nir-footer">
+    <div class="nir-copyright-info">
+      <span>All rights reserved. &#169; Nirvana 2021-2031</span>
+    </div>
+    <div class="nir-branding-header">
+      <section>
+        <div style="font-size: 20px; font-family: 'Reggae One', cursive;">Nirvana</div>
+        <span style="font-size: 10px; color: #aeaeae; font-style: italic; margin-top: -5px;">Minimalist Project Management Tool</span>
+      </section>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="vendor/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="vendor/dragula/dragula.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/utils.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/ticketdetails.js"></script>
+</body>
+
+</html>

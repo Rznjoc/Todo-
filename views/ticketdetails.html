@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nirvana - ticket details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/bootstrap-5.0.0-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/dragula//dragula.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="views/ticketstyle.css">
+</head>
+
+<body>
+  <div class="nir-branding-header">
+    <section class="nir-branding-image" onclick="gotoHomePage()">
+      <div style="font-size: 20px; font-family: 'Reggae One', cursive;">Nirvana</div>
+      <div style="font-size: 10px; color: #aeaeae; font-style: italic; margin-top: -5px;">
+        Minimalist Project Management
+        Tool
+      </div>
+    </section>
+  </div>
+  <div class="liner-header"></div>
+  <div class="ticketDetails-container">
+    <h3 id="nir-ticket-number"></h3>
+    <h2 id="nir-ticket-title"></h2>
+    <p id="nir-ticket-desc"></p>
+    <footer id="ticket-status"><span>Status:&nbsp;</span><span id="nir-ticket-status"></span></footer>
+    <footer id="ticket-assignedto"><span>Assigned to:&nbsp;</span><span id="nir-ticket-assignedto"></span></footer>
+  </div>
+
+  <footer class="nir-footer">
+    <div class="nir-copyright-info">
+      <span>All rights reserved. &#169; Nirvana 2021-2031</span>
+    </div>
+    <div class="nir-branding-header">
+      <section>
+        <div style="font-size: 20px; font-family: 'Reggae One', cursive;">Nirvana</div>
+        <div style="font-size: 10px; color: #aeaeae; font-style: italic; margin-top: -5px;">Minimalist Project Management Tool</span>
+      </section>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="vendor/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="vendor/bootstrap-5.0.0-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/ticketdetails.js"></script>
+</body>
+
+</html>

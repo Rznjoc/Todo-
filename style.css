@@ -1,0 +1,188 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+.nir-branding-header {
+    padding: 10px;
+}
+.nir-branding-image {
+    cursor: pointer;
+}
+.nir-container {
+    width: 98%;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 10px;
+}
+
+#btnSaveChanges {
+    margin-left: 150px;
+    margin-top: 25px;
+}
+
+#todo-list-container {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.liner-header {
+    margin-bottom: 5px;
+    height: 1px;
+    width: auto;
+    background-color: #e4e4e4;
+}
+
+.liner-title {
+    margin-bottom: 5px;
+    height: 2px;
+    width: auto;
+    background-color: black;
+    
+}
+
+.todo-list-item {
+    border: 2px solid;
+    width: 20%;
+    display: inline-block;
+    margin: 5px;
+    overflow-y:auto;
+    height: 150px;
+    padding: 0px;
+    background-color: rgb(253, 253, 74);
+}
+
+.todo-list-item-title {
+    font-size:large;
+    text-align: center;
+}
+
+.todo-list-item-description {
+    font-size: 13px;
+    text-align: center;
+}
+
+
+.todo-input input {
+    height: 30px;
+    font-size: 18px;
+    padding: 5px;
+    width: 250px;
+    text-align:center;
+    background:aquamarine
+}
+
+
+.modal-popup {
+    display: none;
+    position: static;
+    width: 25%;
+    margin: 100px 5px 5px 900px;
+    overflow: hidden;
+    opacity: 0.9;
+    height: 50%;
+    background: #353232;
+    z-index: 100;
+}
+.completed {
+    background-color: green;
+}
+.not-started {
+    background-color: red;
+
+}
+.in-progress {
+    background-color: blue;
+}
+.status-bar {
+    height: 10px;
+    color: blue;
+}
+.status-view {
+    margin-top: 20px;
+}
+#board-view {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.quick-filters a {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.nir-flex-container {
+    display: flex;   
+}
+.nir-row {
+    flex-direction: row;
+}
+.nir-col {
+    flex-direction: column;
+}
+.nir-quick-links a {
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.view-link-selected {
+    border-bottom: 1px solid #0d6efd;
+}
+.width-100 {
+    width: 100%;
+}
+.card-container {
+    background-color: #F4F5F7;
+    height: 100%;
+    padding: 5px;
+}
+.padding-5px {
+    padding: 5px;
+}
+.status-card {
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-shadow: -2px 8px 7px -3px rgb(0 0 0 / 30%);
+    word-break: break-word;
+}
+.status-card-ticket-no {
+    font-size: 12px;
+}
+.nir-card-header {
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.status-card-avatar {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: #3B7FC4;
+    border-radius: 25px;
+}
+.status-card-avatar-initial {
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    left: 6px;
+    top: 1px;
+}
+.nir-card-desc {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nir-card-footer {
+    font-size: 12px;
+}
+#doFilter {
+    background-color: black;
+}
+.nir-footer {
+    font-size: 12px;
+    color: #7a869a;
+    border-top: 1px solid #e4e4e4;
+    padding: 10px;
+    text-align: center;
+    position: static;
+    bottom: 0;
+}
+
